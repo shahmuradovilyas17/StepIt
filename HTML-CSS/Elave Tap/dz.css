@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "Raleway-700";
+    src: url(Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway-500";
+    src: url(Raleway-Medium.ttf);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Первый Блок */
+
+.upper-menu-wrapper {
+    background-color: #E1EDE6;
+    height: 100px;
+}
+
+.upper-menu {
+    display: flex;
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 38px 165px;
+    justify-content: space-between;
+}
+
+.upper-menu-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.upper-menu-links-element {
+    margin-right: 60px;
+    font-size: 20px;
+    font-family: "Raleway-500";
+    color: #2C2D35;
+}
+
+
+.upper-menu-logo {
+    color: #598D66;
+    font-size: 20px;
+    font-family: "Raleway-700";
+    background-image: url(Star\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 35px;
+    padding: 6px 0 6px 45px;
+    text-align: center;
+}
+
+.upper-menu-links-element-img {
+    background-image: url(Frame\ 217.svg);
+    background-repeat: no-repeat    ;
+    padding-left: 30px;
+}
+
+/* Второй Блок */
+
+.introduction-menu-wrapper {
+    margin-bottom: 70px;
+}
+
+.introduction-menu-inner {
+    width: 1110px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.introduction-menu-image {
+    margin-right: 30px;
+}
+
+.introduction-menu-title {
+    font-size: 60px;
+    font-family: "Raleway-500";
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.introduction-menu-title span {
+    font-size: 60px;
+    font-family: "Raleway-500";
+    color:#598D66;
+}
+
+.introduction-menu-desc {
+    font-size: 18px;
+    font-family: "Raleway-500";
+    color: #86928B;
+    margin-bottom: 60px;
+}
+
+.introduction-menu-btn {
+    display: inline-block;
+    padding: 21px 60px;
+    border: 1px solid green;
+    font-size: 20px;
+    font-family: "Raleway-500";
+    color: #598D66;
+}
+
+.introduction-menu-elements {
+    margin-top: 145px;
+}
+
+/* Третий Блок */
+
+.products-menu-inner {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.products-upper-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.products-upper-menu-elements {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.products-upper-menu-element {
+    margin-right: 30px;
+    padding: 10px 20px;
+    border: 1px solid #D4E8D9;
+    background-color: #D4E8D9;
+    border-radius: 100px;
+    font-size: 20px;
+    font-family: "Raleway-500";
+}
+
+.products-upper-menu-element:first-child {
+    border: 1px solid #376B44;
+    background-color: #376B44;
+    border-radius: 100px;
+    color: #F4F6F5;
+}
+
+.products-upper-menu-element:last-child {
+    margin-right: 0;
+}
+
+.products-upper-menu-title {
+    font-size: 40px;
+    font-family: "Raleway-500";
+}
+
+.products-menu-elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-menu-element {
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+}
+
+.products-menu-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.products-menu-element img {
+    margin-bottom: 20px;
+}
+
+.products-menu-element-author {
+    font-family: "Raleway-500";
+    font-size: 18px;
+    color: #86928B;
+    margin-bottom: 10px;
+}
+
+.products-menu-element-name {
+    font-family: "Raleway-500";
+    font-size: 30px;
+    color: #2C2D35;
+    margin-bottom: 8px;
+}
+
+.products-menu-element-desc {
+    font-family: "Raleway-500";
+    font-size: 18px;
+    color: #2C2D35;
+    margin-bottom: 30px;
+}
+
+.products-menu-element-price {
+    font-family: "Raleway-500";
+    font-size: 24px;
+    color: #598D66;
+    margin-bottom: 20px;
+}
+
+.products-menu-element-btn {
+    font-family: "Raleway-500";
+    font-size: 20px;
+    color: #598D66;
+    padding: 21px 105px;
+    border: 1px solid #598D66   ;
+}
+
+/* Четвёртый Блок */
+
+.new-coll-menu-wrapper {
+    margin: 0 auto;
+    width: 1440px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 70px 0;
+    background: url(pic_background.png);
+}
+
+.new-coll-menu-inner {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.new-coll-menu-elements {
+    width: 540px;
+}
+
+.new-coll-menu-element-title {
+    font-family: "Raleway-500";
+    font-size: 40px;
+    color: #F4F6F5;
+    margin-bottom: 20px;
+    background: url(Star\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 100px;
+}
+
+.new-coll-menu-element-desc {
+    font-family: "Raleway-500";
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.new-coll-menu-element-btn {
+    display: inline-block;
+    padding: 21px 60px;
+    background-color: #EEDB6D;
+    font-family: "Raleway-500";
+    font-size: 20px;
+    color: #2C2D35;
+}
+
+/* Пятый Блок */
+
+.team-info-menu-inner {
+    width: 1110px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.team-info-menu-left-image {
+    margin-right: 30px;
+}
+
+.team-info-menu-elements {
+    margin-top: 124px;
+}
+
+.team-info-menu-title {
+    font-family: "Raleway-500";
+    font-size: 40px;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.team-info-menu-desc {
+    font-family: "Raleway-500";
+    font-size: 18px;
+    color: #2C2D35;
+    margin-bottom: 20px;
+}
+
+.team-info-menu-member-image {
+    margin-right: 30px;
+}
+
+.team-info-menu-member-image:last-child {
+    margin-right: 0;
+}
+
+/* Шестой Блок */
+
+.bottom-menu-wrapper {
+    background-color: #E1EDE6;
+}
+
+.bottom-menu-inner {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+
+.bottom-menu-products-news-info {
+    display: flex;
+}
+
+.bottom-menu-products {
+    margin-right: 60px;
+}
+
+.bottom-menu-news {
+    margin-right: 60px;
+}
+
+.bottom-menu-links-logo {
+    margin-right: 32px;
+}
+
+.bottom-menu-logo {
+    color: #598D66;
+    font-size: 20px;
+    font-family: "Raleway-700";
+    background-image: url(Star\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 35px;
+    padding: 6px 0 6px 45px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.bottom-menu-number {
+    font-family: "Reloway-500";
+    font-size: 20px;
+    color: #2C2D35;
+    margin-bottom: 8px;
+}
+
+.bottom-menu-desc {
+    font-family: "Reloway-500";
+    font-size: 18px;
+    color: #86928B;
+}
+
+.bottom-menu-title {
+    font-family: "Reloway-500";
+    font-size: 20px;
+    color: #2C2D35;
+    margin-bottom: 6px;
+}
+
+.bottom-menu-element {
+    font-family: "Reloway-500";
+    font-size: 18px;
+    color: #86928B;
+    margin-bottom: 6px;
+}
+
+.bottom-menu-element:last-child {
+    margin-bottom: 0;
+}
+
+.bottom-menu-links-logos {
+    margin-bottom: 10px;
+}
+
+.bottom-menu-links-name {
+    font-family: "Reloway-500";
+    font-size: 12px;
+    color: #86928B;
+    margin-bottom: 6px;
+}
+
+.bottom-menu-links-rights {
+    font-family: "Reloway-500";
+    font-size: 12px;
+    color: #86928B;
+}

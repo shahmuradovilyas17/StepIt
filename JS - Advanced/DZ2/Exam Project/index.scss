@@ -1,0 +1,1362 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rubik-400";
+  src: url(Fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-500";
+  src: url(Fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Mulish-600";
+  src: url(Fonts/Mulish-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Mulish-700";
+  src: url(Fonts/Mulish-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Mulish-800";
+  src: url(Fonts/Mulish-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-400";
+  src: url(Fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-500";
+  src: url(Fonts/DMSans-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Первый Блок
+
+.top-menu-wrapper {
+  background-color: #7ac751;
+  padding: 16px 0 15px 0;
+
+  .top-menu-inner {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0 auto;
+
+    .top-menu-left-bar {
+      font-family: "Rubik-400";
+      font-size: 16px;
+      line-height: 18.96px;
+    }
+
+    .top-menu-right-bar {
+      display: flex;
+
+      .top-menu-right-currency {
+        font-family: "Rubik-400";
+        font-size: 16px;
+        line-height: 18.96px;
+        margin-right: 20px;
+        padding-right: 40px;
+        border-right: 2.2px solid white;
+        background-image: url(TopMenu/Top-Menu-Icon.svg);
+        background-repeat: no-repeat;
+        background-position: 109px;
+      }
+
+      .top-menu-right-reg {
+        font-family: "Rubik-400";
+        font-size: 16px;
+        line-height: 18.96px;
+      }
+    }
+  }
+}
+
+// Второй Блок
+
+.main-menu-inner {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+  padding: 21px 0 25px 0;
+
+  .main-menu-logo {
+    font-family: "Rubik-500";
+    font-size: 24px;
+    line-height: 28.44px;
+    color: #555555;
+    padding: 9px 0 9px 37px;
+    margin-right: 120px;
+    background-image: url(MainMenu/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  form {
+    display: flex;
+    border: 2px solid #7ac751;
+    border-radius: 8px;
+    margin-right: 200px;
+
+    input {
+      width: 400px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      padding: 13px 23px 12px 23px;
+      font-family: "Rubik-400";
+      font-size: 14px;
+      line-height: 16.59px;
+    }
+
+    .main-menu-search-cat {
+      border: none;
+      border-left: 1.5px solid #e3e3e3c7;
+      padding: 13px 42px 12px 10px;
+      font-family: "Rubik-400";
+      font-size: 14px;
+      line-height: 16.59px;
+      color: #555555;
+      background-image: url(MainMenu/Categories-Icon.svg);
+      background-repeat: no-repeat;
+      background-position: right 21px center;
+    }
+
+    .search-btn {
+      border: none;
+      background-color: #7ac751;
+      padding: 13px 18px 12px 20px;
+    }
+  }
+
+  .main-menu-panels {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
+    li {
+      margin-right: 21px;
+      height: 24px;
+      font-size: 0;
+
+      a {
+        display: inline-block;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Третий Блок
+
+.top-nav-menu-wrapper {
+  background-color: #f7f8fa;
+  margin-bottom: 12px;
+
+  .top-nav-menu-inner {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+
+    .top-nav-menu-elements {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      margin: 0 auto;
+
+      .top-nav-menu-element {
+        margin-right: 65px;
+        padding: 25px 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: #555555;
+          font-family: "Rubik-400";
+          font-size: 14px;
+          line-height: 16.59px;
+        }
+      }
+    }
+  }
+}
+
+// Четвёртый Блок
+
+.bot-nav-menu-inner {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 65px;
+
+  .bot-nav-menu-left {
+    width: 260px;
+    margin-top: -79px;
+    margin-right: 11px;
+
+    .bot-nav-menu-left-button {
+      background-image: url(BotNavigationMenu/Burger-Icon.svg);
+      background-repeat: no-repeat;
+      background-color: #7ac751;
+      background-position: 30px;
+      color: white;
+      padding: 25px 40px 23px 74px;
+      font-family: "Rubik-500";
+      font-size: 16px;
+      line-height: 18.96px;
+    }
+
+    .bot-nav-menu-left-elements {
+      background-color: #f7f8fa;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .bot-nav-menu-left-element {
+        padding: 10px 29px 14px 29px;
+        border-bottom: 0.8px solid #e3e3e3;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          font-family: "Rubik-400";
+          font-size: 14px;
+          line-height: 16.59px;
+          color: #555555;
+        }
+      }
+    }
+  }
+
+  .bot-nav-menu-right {
+    position: relative;
+    max-width: 899px;
+    max-height: 439px;
+
+    .bot-nav-menu-right-content {
+      position: absolute;
+      max-width: 324px;
+      top: 73px;
+      left: 47px;
+
+      .bot-nav-menu-right-content-title {
+        color: #7ac751;
+        font-family: "Rubik-400";
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 6px;
+      }
+
+      .bot-nav-menu-right-content-desc1 {
+        color: #2f2f2f;
+        font-family: "Rubik-500";
+        font-size: 40px;
+        line-height: 47.4px;
+        margin-bottom: 27px;
+        background-image: url(BotNavigationMenu/Text-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom 2px right 4px;
+      }
+
+      .bot-nav-menu-right-content-desc2 {
+        color: #515151b5;
+        font-family: "Mulish-600";
+        font-size: 27px;
+        line-height: 26px;
+        margin-bottom: 35px;
+      }
+
+      .bot-nav-menu-right-content-btn {
+        background-color: #7ac751;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 18px;
+        font-family: "Mulish-700";
+        font-size: 16px;
+        line-height: 20.08px;
+        color: white;
+      }
+    }
+
+    .bot-nav-menu-right-chairs {
+      position: absolute;
+      top: 58px;
+      right: 39px;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin-bottom: 23.53px;
+      }
+    }
+
+    .bot-nav-menu-right-slider {
+      position: absolute;
+      bottom: 20px;
+      right: 394px;
+    }
+  }
+}
+
+// Пятый Блок
+
+.offers-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  .offers-menu-elements {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    .offers-menu-element {
+      padding: 3px 0 3px 73px;
+
+      .offers-menu-text1 {
+        font-family: "Rubik-500";
+        font-size: 20px;
+        line-height: 26px;
+        color: #555555;
+      }
+
+      .offers-menu-text2 {
+        font-family: "Rubik-400";
+        font-size: 14px;
+        line-height: 26px;
+        color: #515151b5;
+      }
+    }
+    .element1 {
+      background-image: url(OffersMenu/Free-Delivery.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .element2 {
+      background-image: url(OffersMenu/Gift.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .element3 {
+      background-image: url(OffersMenu/Wallet.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .element4 {
+      background-image: url(OffersMenu/Support.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
+}
+
+// Шестой Блок
+
+.collections-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 120px;
+
+  .collections-menu-left {
+    position: relative;
+    margin-right: 15px;
+
+    .collections-menu-left-content {
+      position: absolute;
+      top: 49px;
+      left: 31px;
+
+      .collections-menu-left-content-name {
+        font-family: "Mulish-700";
+        font-size: 22px;
+        line-height: 26px;
+        color: #555555;
+        margin-bottom: 10px;
+      }
+
+      .collections-menu-left-content-price {
+        font-family: "Mulish-400";
+        font-size: 20px;
+        line-height: 26px;
+        color: #7ac751;
+        margin-bottom: 13px;
+
+        span {
+          font-family: "Mulish-800";
+        }
+      }
+
+      .collections-menu-left-content-more {
+        display: inline-block;
+        padding-right: 14px;
+        font-family: "Mulish-400";
+        font-size: 16px;
+        line-height: 26px;
+        color: #757575;
+        background-image: url(CollectionsMenu/Collections-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+  }
+
+  .collections-menu-right {
+    .collections-menu-right-el1 {
+      position: relative;
+      margin-bottom: 17px;
+
+      .collections-menu-right-content {
+        position: absolute;
+        top: 52px;
+        left: 24.04px;
+
+        .collections-menu-right-content-name {
+          font-family: "Mulish-600";
+          font-size: 22px;
+          line-height: 27.61px;
+          color: #555555;
+          margin-bottom: 8px;
+        }
+
+        .collections-menu-right-content-price {
+          font-family: "Mulish-600";
+          font-size: 20px;
+          line-height: 26px;
+          color: #7ac751;
+          margin-bottom: 9px;
+        }
+
+        .collections-menu-right-content-more {
+          display: inline-block;
+          padding-right: 14px;
+          font-family: "Mulish-400";
+          font-size: 16px;
+          line-height: 26px;
+          color: #757575;
+          background-image: url(CollectionsMenu/Collections-arrow.svg);
+          background-repeat: no-repeat;
+          background-position: right;
+        }
+      }
+    }
+
+    .collections-menu-right-el2 {
+      position: relative;
+      margin-bottom: 17px;
+
+      .collections-menu-right-content {
+        position: absolute;
+        top: 37px;
+        left: 24.09px;
+
+        .collections-menu-right-content-name {
+          font-family: "Mulish-600";
+          font-size: 22px;
+          line-height: 27.61px;
+          color: #555555;
+          margin-bottom: 8px;
+        }
+
+        .collections-menu-right-content-price {
+          font-family: "Mulish-600";
+          font-size: 20px;
+          line-height: 26px;
+          color: #7ac751;
+          margin-bottom: 9px;
+        }
+
+        .collections-menu-right-content-more {
+          display: inline-block;
+          padding-right: 14px;
+          font-family: "Mulish-400";
+          font-size: 16px;
+          line-height: 26px;
+          color: #757575;
+          background-image: url(CollectionsMenu/Collections-arrow.svg);
+          background-repeat: no-repeat;
+          background-position: right;
+        }
+      }
+    }
+  }
+}
+
+// Седьмой Блок
+
+.trending-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 99px;
+
+  .trending-menu-name {
+    font-family: "Mulish-700";
+    font-size: 36px;
+    line-height: 45.18px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .trending-menu-sections {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    .trending-menu-section {
+      margin-right: 70px;
+      margin-bottom: 73px;
+
+      .trending-menu-section-btn {
+        border: none;
+        background-color: transparent;
+        font-family: "Mulish-600";
+        font-size: 24px;
+        line-height: 30.12px;
+        color: #c2c2c2;
+
+        &:hover {
+          color: #7ac751;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .trending-menu-elements {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .trending-menu-element {
+      position: relative;
+      margin-right: 30px;
+      margin-bottom: 45px;
+
+      &:hover {
+        .trending-menu-panels {
+          opacity: 1;
+        }
+      }
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      .trending-menu-element-img {
+        margin-bottom: 15.18px;
+      }
+
+      .trending-menu-element-type {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 18.2px;
+        color: #757575b5;
+        margin-bottom: 9px;
+      }
+
+      .trending-menu-element-name {
+        font-family: "Rubik-400";
+        font-size: 20px;
+        line-height: 24px;
+        color: #555555;
+        margin-bottom: 8px;
+      }
+
+      .trending-menu-element-price-rate {
+        display: flex;
+        justify-content: space-between;
+
+        .trending-menu-element-price {
+          display: flex;
+
+          .trending-menu-element-price-new {
+            font-family: "Mulish-700";
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #7ac751;
+            margin-right: 7px;
+          }
+
+          .trending-menu-element-price-old {
+            font-family: "Mulish-600";
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #cccccc;
+            margin-right: 7px;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .trending-menu-element-new-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 0.97px 8.52px 2.25px 8.74px;
+        border-bottom-right-radius: 5px;
+        background-color: #00b7f1;
+        color: white;
+        top: 0;
+        left: 0;
+      }
+
+      .trending-menu-element-sale-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 0.97px 8.52px 2.25px 8.74px;
+        border-bottom-right-radius: 5px;
+        background-color: #7ac751;
+        color: white;
+        top: 0;
+        left: 0;
+      }
+
+      .trending-menu-panels {
+        position: absolute;
+        top: 91.4px;
+        right: 6.8px;
+        opacity: 0;
+
+        .trending-menu-panels-elements {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+
+          .trending-menu-panels-element {
+            margin-bottom: 8.75px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            button {
+              padding: 0;
+              border: none;
+              background-color: white;
+              width: 38.85px;
+              height: 38.89px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trending-menu-pages {
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      margin-right: 14px;
+
+      img + img {
+        display: none;
+      }
+
+      &:hover {
+        img {
+          display: none;
+          + img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Восьмой Блок
+
+.special-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  .special-menu-title {
+    text-align: center;
+    font-family: "Mulish-700";
+    font-size: 36px;
+    line-height: 45.18px;
+    color: #555555;
+    margin-bottom: 60px;
+  }
+
+  .special-menu-elements {
+    display: flex;
+
+    .special-menu-element {
+      margin-right: 30px;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .special-menu-element-content {
+        position: absolute;
+        top: 28px;
+        left: 24px;
+        max-width: 227px;
+
+        .special-menu-element-content-title {
+          font-family: "Mulish-600";
+          font-size: 22px;
+          line-height: 27.61px;
+          color: #555555;
+          margin-bottom: 11px;
+        }
+
+        .special-menu-element-content-text {
+          font-family: "Mulish-400";
+          font-size: 12px;
+          line-height: 18px;
+          color: #757575;
+          margin-bottom: 20px;
+        }
+
+        .special-menu-element-content-price-btn {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 29px;
+
+          .special-menu-element-content-price {
+            display: flex;
+            align-items: center;
+
+            .special-menu-element-content-price-new {
+              font-family: "Mulish-700";
+              font-size: 18px;
+              line-height: 21.6px;
+              color: #7ac751;
+              margin-right: 7px;
+            }
+            .special-menu-element-content-price-old {
+              font-family: "Mulish-600";
+              font-size: 18px;
+              line-height: 21.6px;
+              color: #cccccc;
+              padding-top: 2px;
+              text-decoration: line-through;
+            }
+          }
+
+          button {
+            border: none;
+            border-radius: 2px;
+            padding: 7px 10px 6px 10px;
+            font-family: "Mulish-700";
+            font-size: 12px;
+            line-height: 15.06px;
+            color: #ffffff;
+            background-color: #7ac751;
+          }
+        }
+      }
+
+      .special-menu-element-off-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 5px 7.48px 4.2px 8px;
+        border-bottom-left-radius: 5px;
+        background-color: #00b7f1;
+        color: white;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+// Девятый Блок
+
+.products-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  .products-menu-name {
+    font-family: "Mulish-700";
+    font-size: 36px;
+    line-height: 45.18px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .products-menu-sections {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    .products-menu-section {
+      margin-right: 66px;
+      margin-bottom: 73px;
+
+      .products-menu-section-btn {
+        border: none;
+        background-color: transparent;
+        font-family: "Mulish-600";
+        font-size: 24px;
+        line-height: 30.12px;
+        color: #c2c2c2;
+
+        &:hover {
+          color: #7ac751;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .products-menu-elements {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .products-menu-element {
+      position: relative;
+      margin-right: 30px;
+      margin-bottom: 45px;
+
+      &:hover {
+        .products-menu-panels {
+          opacity: 1;
+        }
+      }
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      .products-menu-element-img {
+        margin-bottom: 15.18px;
+      }
+
+      .products-menu-element-type {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 18.2px;
+        color: #757575b5;
+        margin-bottom: 9px;
+      }
+
+      .products-menu-element-name {
+        font-family: "Rubik-400";
+        font-size: 20px;
+        line-height: 24px;
+        color: #555555;
+        margin-bottom: 8px;
+      }
+
+      .products-menu-element-price-rate {
+        display: flex;
+        justify-content: space-between;
+
+        .products-menu-element-price {
+          display: flex;
+
+          .products-menu-element-price-new {
+            font-family: "Mulish-700";
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #7ac751;
+            margin-right: 7px;
+          }
+
+          .products-menu-element-price-old {
+            font-family: "Mulish-600";
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #cccccc;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .products-menu-element-new-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 0.97px 8.52px 2.25px 8.74px;
+        border-bottom-right-radius: 5px;
+        background-color: #00b7f1;
+        color: white;
+        top: 0;
+        left: 0;
+      }
+
+      .products-menu-element-sale-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 0.97px 8.52px 2.25px 8.74px;
+        border-bottom-right-radius: 5px;
+        background-color: #7ac751;
+        color: white;
+        top: 0;
+        left: 0;
+      }
+
+      .products-menu-element-off-icon {
+        position: absolute;
+        font-family: "Mulish-600";
+        font-size: 12px;
+        line-height: 15.6px;
+        padding: 0.97px 8.52px 2.25px 8.74px;
+        border-bottom-right-radius: 5px;
+        background-color: #ff6868;
+        color: white;
+        top: 0;
+        left: 0;
+      }
+
+      .products-menu-panels {
+        position: absolute;
+        top: 91.4px;
+        right: 6.8px;
+        opacity: 0;
+
+        .products-menu-panels-elements {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+
+          .products-menu-panels-element {
+            margin-bottom: 8.75px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            button {
+              padding: 0;
+              border: none;
+              background-color: white;
+              width: 38.85px;
+              height: 38.89px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .products-menu-pages {
+    display: flex;
+    justify-content: end;
+
+    .products-menu-next-page {
+      border: none;
+      border-radius: 2px;
+      background-color: #7ac751;
+      color: white;
+      font-family: "Mulish-600";
+      font-size: 18px;
+      line-height: 22.59px;
+      padding: 12px 53px 14px 20px;
+      background-image: url(ProductsMenu/Products-page-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: right 29px center;
+      margin-right: 143px;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+
+      .products-menu-label1 {
+        font-family: "Mulish-400";
+        font-size: 18px;
+        line-height: 23.04px;
+        color: #757575;
+        margin-right: 9px;
+      }
+
+      .products-menu-page-input {
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+        background-color: #f8fafb;
+        width: 58px;
+        height: 29px;
+        padding-top: 7px;
+        padding-bottom: 6px;
+        margin-right: 19px;
+      }
+
+      .products-menu-label2 {
+        font-family: "Mulish-400";
+        font-size: 18px;
+        line-height: 23.04px;
+        color: #757575;
+        margin-right: 23px;
+      }
+
+      .products-menu-btns {
+        border-radius: 2px;
+        height: 29px;
+        padding: 2px 5px 3px 5px;
+        background-color: #7ac751;
+
+        .products-menu-previous {
+          padding: 6.42px 9.14px 6.48px 8.36px;
+          border: none;
+          background-color: #7ac751;
+          width: 24px;
+          height: 24px;
+          background-image: url(ProductsMenu/Products-page-left.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .products-menu-next {
+          padding: 6.42px 9.14px 6.48px 8.36px;
+          border: none;
+          background-color: #7ac751;
+          width: 24px;
+          height: 24px;
+          background-image: url(ProductsMenu/Products-page-right.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+// Десятый Блок
+
+.feedback-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 172px;
+  text-align: center;
+  margin-bottom: 115px;
+
+  .feedback-menu-title {
+    font-family: "Mulish-700";
+    font-size: 36px;
+    line-height: 45.18px;
+    color: #555555;
+    margin-bottom: 90px;
+  }
+
+  .feedback-menu-wrapper {
+    padding: 80px 125px 47px 125px;
+    position: relative;
+    border-radius: 8px;
+    background: #f8fafb;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+
+    .feedback-menu-author-image {
+      position: absolute;
+      top: -44px;
+      left: 50%;
+      margin-left: -44px;
+      img {
+        border-radius: 50%;
+        width: 88px;
+        height: 88px;
+      }
+    }
+
+    .feedback-menu-author-text {
+      font-family: "DMSans-400";
+      font-size: 16px;
+      line-height: 24px;
+      color: #515151;
+      margin-bottom: 32px;
+    }
+
+    .feedback-menu-author-name {
+      font-family: "Mulish-600";
+      font-size: 24px;
+      line-height: 28.8px;
+      color: #555555;
+      margin-bottom: 8px;
+    }
+
+    .feedback-menu-author-position {
+      font-family: "Rubik-400";
+      font-size: 16px;
+      line-height: 20px;
+      color: #515151;
+      margin-bottom: 8px;
+    }
+
+    .feedback-menu-arrow {
+      position: absolute;
+      background: none;
+      border: none;
+      padding: 0;
+      top: 50%;
+      height: 38px;
+      width: 24px;
+      margin-top: -19px;
+      background: url(FeedbackMenu/feedback-arrow-left.svg);
+      background-repeat: no-repeat;
+    }
+
+    .arrow-left {
+      left: -56.2px;
+    }
+
+    .arrow-right {
+      right: -64.2px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// Одиннадцатый Блок
+
+.articles-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 115px;
+
+  .articles-menu-title {
+    text-align: center;
+    font-family: "Mulish-700";
+    font-size: 36px;
+    line-height: 45.18px;
+    color: #555555;
+    margin-bottom: 56.66px;
+  }
+
+  .articles-menu-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .articles-menu-element {
+      position: relative;
+      margin-right: 26.25px;
+      margin-bottom: 22px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      .articles-menu-element-content {
+        position: absolute;
+        width: 490.1px;
+        bottom: 30.35px;
+        left: 44.04px;
+
+        .articles-menu-element-date-tag {
+          display: flex;
+          margin-bottom: 20.6px;
+
+          .articles-menu-element-tag {
+            background-color: #f8fafb;
+            background-image: url(ArticlesMenu/articles-tag.svg);
+            background-repeat: no-repeat;
+            background-position: left 4px center;
+            font-family: "DMSans-500";
+            font-size: 12px;
+            line-height: 15.6px;
+            color: #7ac751;
+            padding: 6.99px 5.94px 3px 23.7px;
+            border-radius: 5px;
+            margin-right: 4.93px;
+          }
+
+          .articles-menu-element-date {
+            font-family: "Mulish-400";
+            font-size: 14px;
+            line-height: 18.2px;
+            color: #ffffff;
+            align-items: center;
+            padding-top: 3px;
+          }
+        }
+
+        .articles-menu-element-text {
+          font-family: "Mulish-700";
+          font-size: 39px;
+          line-height: 46.8px;
+          color: white;
+          margin-bottom: 37.94px;
+        }
+
+        a {
+          text-decoration: none;
+          font-family: "DMSans-500";
+          font-size: 14px;
+          line-height: 18.2px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Двенадцатый Блок
+
+.links-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 51px;
+
+  .links-menu-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .links-menu-categorie {
+      margin-right: 180px;
+
+      &:first-child {
+        margin-right: 83px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .links-menu-logo {
+        font-family: "Rubik-500";
+        font-size: 24px;
+        line-height: 28.44px;
+        color: #555555;
+        padding: 9px 0 9px 37px;
+        margin-right: 120px;
+        background-image: url(LinksMenu/Logo.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-bottom: 18px;
+      }
+
+      .links-menu-logo-desc {
+        max-width: 318px;
+        font-family: "Rubik-400";
+        font-size: 16px;
+        line-height: 32px;
+        color: #555555;
+        margin-bottom: 8px;
+      }
+
+      .links-menu-elements {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .links-menu-element {
+          font-family: "Rubik-400";
+          font-size: 18px;
+          line-height: 40px;
+          color: #555555;
+        }
+
+        .title {
+          font-family: "Rubik-500";
+          font-size: 18px;
+          line-height: 40px;
+          color: #555555;
+        }
+      }
+    }
+  }
+}
+
+// Тринадцатый Блок
+
+.bot-menu-wrapper {
+  border-top: 1px solid #969696;
+
+  .bot-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 33px 0 34.73px 0;
+
+    .bot-menu-desc {
+      font-family: "Rubik-400";
+      font-size: 14px;
+      line-height: 14px;
+      color: #555555;
+    }
+
+    .bot-menu-elements {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      .bot-menu-element {
+        margin-right: 51px;
+        font-family: "Rubik-400";
+        font-size: 14px;
+        line-height: 14px;
+        color: #555555;
+      }
+    }
+  }
+}

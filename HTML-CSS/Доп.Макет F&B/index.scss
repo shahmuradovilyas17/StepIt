@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "OpenSans-400";
+    src: url(OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-700";
+    src: url(OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-700";
+    src: url(Cormorant-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-700-I";
+    src: url(Cormorant-BoldItalic.ttf);
+}
+
+// Первый Блок
+
+.top-menu-wrapper {
+    background-color: #1D2F30;
+
+    .top-menu-inner {
+        padding: 18px 0;
+        max-width: 1110px;
+        display: flex;
+        margin: 0 auto;
+
+        .top-menu-logo {
+            margin-right: 125px;
+        }
+
+        .top-menu-nav-elements {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin-right: 296px;
+
+            .top-menu-nav-element {
+                margin-right: 64px;
+                color: white;
+                font-family: "OpenSans-400";
+                font-size: 16px;
+                line-height: 24px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .top-menu-buttons {
+            display: flex;
+
+            .top-menu-button-1 {
+                margin-right: 65px;
+                background-image: url(search-topmenu.svg);
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+                padding: 12px;
+            } 
+
+            .top-menu-button-2 {
+                background-image: url(log-in-topmenu.svg);
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+                padding: 12px;
+            }
+        }
+        
+    }
+}
+
+// Второй Блок
+
+.introduction-menu-wrapper-img {
+    background-image: url(introduction-menu-img.jpg);
+
+    .introduction-menu-wrapper {
+        background-color: #1D2F30;
+        opacity: 0.7;
+
+        .introduction-menu-inner {
+            max-width: 1110px;
+            margin: 0 auto; 
+            padding: 120px 0;  
+
+            .introduction-menu-title {
+                max-width: 688px;
+                margin-bottom: 16px;    
+                font-family: "Cormorant-700";
+                font-size: 60px;
+                line-height: 60px;
+                color: #FFFFFF;
+            }
+
+            .introduction-menu-desc {
+                max-width: 635px;
+                margin-bottom: 24px;
+                font-family: "OpenSans-400";
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .introduction-menu-link {
+                color: #BAE249;
+                font-family: "OpenSans-700";
+                font-size: 16px;
+                line-height: 21.79px;
+                text-decoration: none;
+                background-image: url(introduction-menu-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: right;
+                padding-right: 51px;
+            }
+        }
+    }
+}
+
+// Третий Блок
+
+.list-menu-wrapper{
+    background-color: #1D2F30;
+    padding-bottom: 57px;
+
+    .list-menu-inner {
+        max-width: 1110px;
+        background-color: #1D2F30;
+        margin: 0 auto;
+        padding-top: 60px;
+
+        .list-menu-elements {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin-bottom: 26px;
+
+            .list-menu-element {
+                margin-right: 30px;
+                width: 255px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .list-menu-element-images {
+                    background-color: #0B1919;
+                    position: relative;
+                    padding: 30px 0;
+
+                    .list-menu-element-images-plant{
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .list-menu-element-images-number {
+                        position: absolute;
+                        left: 16px;
+                        top: 16px;
+                    }
+                }
+
+                .list-menu-element-text {
+                    border: 1px solid #0B1919;
+                    border-top: none;
+                    padding: 16px 16px 24px 16px;
+                    height: 313px;
+                    position: relative;
+
+                    .list-menu-element-title{
+                        font-family: "Cormorant-700";
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                        margin-bottom: 8px;
+                    }
+
+                    .list-menu-element-desc {
+                        font-family: "OpenSans-400";
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #899D9D;
+                    }
+
+                    .list-menu-element-button {
+                        border: 1px solid #BAE249;
+                        background-color: transparent;
+                        color: #BAE249;
+                        padding: 10.5px 28.5px;
+                        position: absolute;
+                        bottom: 24px;
+                        
+                    }
+                }
+            }
+        }
+
+        .list-menu-slider {
+            display: flex;
+            justify-content: center;
+
+            .list-menu-slider-btn-prev {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                margin-right: 30px;
+                width: 25px;
+            }
+
+            .list-menu-slider-btn-next {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                width: 25px;
+            }
+
+            .list-menu-slider-page {
+                margin-right: 30px; 
+                font-family: "Cormorant-700";
+                font-size: 24px;
+                line-height: 36px;
+                color: white;
+            }
+        }
+    }
+}
+
+// Четвёртый Блок
+
+.artifacts-menu-wrapper {
+    background-color: #1D2F30;
+    padding-bottom: 60px;
+    
+    .artifacts-menu-inner {
+        max-width: 1110px;
+        margin: 0 auto;
+
+        .artifacts-menu-title {
+            font-family: "Cormorant-700-I";
+            font-size: 48px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        .artifacts-menu-content {
+            display: flex;
+
+            .artifacts-menu-content-elements {
+                position: relative;
+                width: 825px;
+                height: 493px;
+                background-color: #0B1919;
+                margin-right: 30px;
+
+                .artifacts-menu-content-moss1 {
+                    position: absolute;
+                    left: 16px;
+                    top: 16px;
+                }
+
+                .artifacts-menu-content-42 {
+                    position: absolute;
+                    top: 142px;
+                    left: 16px;
+                }
+
+                .artifacts-menu-content-moss2 {
+                    position: absolute;
+                    left: 165px;
+                    top: 16px;
+                }
+
+                .artifacts-menu-content-72 {
+                    position: absolute;
+                    left: 324px;
+                    top: 16px;
+                }
+
+                .artifacts-menu-content-wood1 {
+                    position: absolute;
+                    right: 16px;
+                    top: 16px;
+                }
+
+                .artifacts-menu-content-27 {
+                    position: absolute;
+                    right: 285px;
+                    top: 50px;
+                }
+
+                .artifacts-menu-content-flower1 {
+                    position: absolute;
+                    left: 16px;
+                    bottom: 16px;
+                }
+
+                .artifacts-menu-content-51 {
+                    position: absolute;
+                    left: 156px;
+                    bottom: 98px;
+                }
+
+                .artifacts-menu-content-leaf1 {
+                    position: absolute;
+                    left: 285px;
+                    bottom: 16px;
+                }
+
+                .artifacts-menu-content-91 {
+                    position: absolute;
+                    left: 394px;
+                    bottom: 16px;
+                }
+
+                .artifacts-menu-content-bark1 {
+                    position: absolute;
+                    right: 187px;
+                    bottom: 16px;
+                }
+
+                .artifacts-menu-content-17 {
+                    position: absolute;
+                    right: 179px;
+                    top: 184px;
+                }
+
+                .artifacts-menu-content-flower2 {
+                    position: absolute;
+                    right: 15px;
+                    bottom: 16px;
+                }
+
+                .artifacts-menu-content-23 {
+                    position: absolute;
+                    right: 56px;
+                    bottom: 16px;
+                }
+            }
+
+            .artifacts-menu-content-desc {
+                width: 255px;
+                height: 493px;
+                background-color: #BAE249;
+                padding: 16px 16px 24px 16px;
+                position: relative;
+
+                .artifacts-menu-content-desc-title {
+                    font-family: "Cormorant-700";
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #1D2F30;
+                    margin-bottom: 8px;
+                }
+
+                .artifacts-menu-content-desc-text {
+                    font-family: "OpenSans-400";
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #506829;
+
+                    span {
+                        display: block;
+                        color: transparent;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    left: 16px;
+                    bottom: 24px;
+                    text-decoration: none;
+                    font-family: "OpenSans-700";
+                    font-size: 16px;
+                    line-height: 21.79px;
+                    color: #0B1919;
+                    padding-right: 51px;
+                    background-image: url(Artifacts\ Right\ Arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                }
+            }
+        }
+    }
+}
+
+// Пятый Блок
+
+.help-menu-wrapper-img {
+    background-image: url(HelpMenuImage.jpg);
+
+    .help-menu-wrapper {
+        background-color: #1D2F30;
+        opacity: 0.7;
+
+        .help-menu-inner {
+            max-width: 1110px;
+            margin: 0 auto;
+            padding: 60px 0;
+
+            .help-menu-title {
+                font-family: "Cormorant-700-I";
+                font-size: 48px;
+                line-height: 48px;
+                color: #FFFFFF;
+                margin-bottom: 16px;
+            }
+
+            .help-menu-desc {
+                max-width: 825px;
+                font-family: "OpenSans-400";
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-bottom: 24px;
+            }
+
+            .help-menu-form {
+
+                input {
+                    display: block;
+                    margin-bottom: 24px;
+                    width: 350px;
+                    height: 45px;
+                    padding: 10.5px 16px;
+                }
+                
+                button {
+                    background-color: #BAE249;
+                    border: none;
+                    color: #0B1919;
+                    font-family: "OpenSans-700";
+                    font-size: 16px;
+                    line-height: 21.79px;
+                    padding: 11.5px 26px;
+                }
+            }
+        }
+    }
+}
+
+// Шестой Блок
+
+.bottom-menu-top {
+    background-color: #0B1919;
+    padding: 18px 0;
+
+    .bottom-menu-top-inner {
+        max-width: 1110px;
+        margin: 0 auto;
+        
+
+        .bottom-menu-top-elements {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+            .bottom-menu-top-element {
+                margin-right: 32px;
+                font-size: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.bottom-menu-bot {
+    background-color: #1D2F30;
+    padding: 3px 0;
+
+    .bottom-menu-bot-inner {
+        max-width: 1110px;
+        margin: 0 auto;
+
+        .bottom-menu-bot-text {
+            font-family: "OpenSans-400";
+            font-size: 12px;
+            line-height: 16.34px;
+            color: #899D9D;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  padding: 20px;
+}
+
+.container-div {
+  border: 1px solid black;
+  padding: 10px;
+}
+.container-div .content-container {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 20px;
+}
+.container-div .description-container {
+  border: 1px solid green;
+  padding: 10px;
+  margin: 20px;
+}
+.container-div .edit-container {
+  border: 1px solid rgb(2, 0, 128);
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

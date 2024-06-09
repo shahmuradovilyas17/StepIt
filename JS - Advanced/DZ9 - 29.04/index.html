@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-div">
+        <div>Name</div>
+        <input
+          type="text"
+          class="input-name"
+          data-reg-exp="^[a-zA-Z]+$"
+          data-min-length="5"
+          data-max-length="8"
+        />
+      </div>
+      <div class="form-div">
+        <div>Surname</div>
+        <input
+          type="text"
+          class="input-surname"
+          data-reg-exp="^[a-zA-Z]+$"
+          data-min-length="5"
+          data-max-length="8"
+        />
+      </div>
+      <div class="form-div">
+        <div>Gender</div>
+        <input type="radio" class="input-gender" name="gender" />Male
+        <input type="radio" class="input-gender" name="gender" />Female
+      </div>
+      <div class="form-div">
+        <div>Age</div>
+        <input
+          type="text"
+          class="input-age"
+          data-min-age="14"
+          data-max-age="100"
+        />
+      </div>
+      <div class="form-div">
+        <div>Email</div>
+        <input
+          type="text"
+          class="input-email"
+          data-reg-exp-email='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+        />
+      </div>
+      <button class="form-btn">Send</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

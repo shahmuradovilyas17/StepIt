@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "M-500";
+    src: url(Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "M-600";
+    src: url(Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "M-700";
+    src: url(Montserrat-Bold.ttf);
+}
+
+.payment-menu-info {
+    padding: 50px 56px 54px 53px;
+    border: 1px solid #C7D8DD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 467px;
+    margin: 0 auto;
+}
+
+.payment-menu-info-email {
+    margin-bottom: 55px;
+    font-family: "M-700";
+    font-size: 13px;
+}
+
+.payment-menu-info-name-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.payment-menu-info-name {
+    font-family: "M-700";
+    font-size: 13px;
+    color: #586C75;
+}
+
+.payment-menu-info-price {
+    font-family: "M-700";
+    font-size: 13px;
+    color: #586C75;
+}
+
+.payment-menu-info-adress {
+    font-family: "M-500";
+    font-size: 13px;
+    color: #8C9396;
+}
+
+.payment-menu-amount {
+    border: 1px solid #C7D8DD;
+    padding: 19px 56px 39px 53px;
+    width: 467px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.payment-menu-amount-desc-info {
+    font-family: "M-500";
+    font-size: 13px;
+    color: #AECAD6;
+    margin-bottom: 19px;
+}
+
+.payment-menu-amount-desc-price {
+    font-family: "M-500";
+    font-size: 36px;
+}
+
+.payment-menu-amount-id {
+    display: flex;
+}
+
+.payment-menu-amount-id-info {
+    margin-right: 29px;
+    font-family: "M-500";
+    font-size: 13px;
+    color: #AECAD6;
+}
+
+.payment-menu-amount-id-number {
+    font-family: "M-600";
+    font-size: 13px;
+}
+
+.payment-menu-card-info {
+    padding: 30px 56px 57px 53px;
+    border: 1px solid #C7D8DD;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 467px;
+    margin: 0 auto;
+}
+
+.payment-menu-card-details {
+    font-family: "M-500";
+    font-size: 13px;
+    color: #AECAD6;
+    margin-bottom: 18px;
+}
+
+.payment-menu-card-enter {
+    input {
+        border: 1px solid #C7D8DD;
+        border-radius: 4px;
+        width: 359px;
+        height: 49px;
+        padding: 17px;
+        background-color: #F9FCFD;
+        font-family: "M-500";
+        font-size: 12px;
+        color: black;
+    }
+
+    margin-bottom: 10px;
+}
+
+.payment-menu-card-date-cvv {
+    display: flex;
+    position: relative;
+
+    .date {
+        margin-right: 10px;
+        border: 1px solid #C7D8DD;
+        border-radius: 4px;
+        width: 174px;
+        height: 49px;
+        padding: 17px;
+        background-color: #F9FCFD;
+        font-family: "M-500";
+        font-size: 12px;
+        color: black;
+    }
+
+    .cvv {
+        border: 1px solid #C7D8DD;
+        border-radius: 4px;
+        width: 174px;
+        height: 49px;
+        padding: 17px;
+        background-color: #F9FCFD;
+        font-family: "M-500";
+        font-size: 12px;
+        color: black;
+    }
+
+    img {
+        position: absolute;
+        top: 10.5px;
+        right: 9px;
+    }
+
+    margin-bottom: 10px;
+}
+
+.pay-button {
+    text-align: center;
+    border: 1px solid #0B8888;
+    border-radius: 4px;
+    width: 359px;
+    height: 49px;
+    background-color: #FF5601;
+    font-family: "M-700";
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+}
+
+.payment-menu-card-systems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-menu-card-systems-desc {
+    font-family: "M-500";
+    font-size: 13px;
+    color: #AECAD6;
+}

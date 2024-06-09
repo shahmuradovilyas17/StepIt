@@ -1,0 +1,559 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Sora-400";
+  src: url(Sora-Regular.ttf);
+}
+@font-face {
+  font-family: "Sora-600";
+  src: url(Sora-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Sora-700";
+  src: url(Sora-Bold.ttf);
+}
+@font-face {
+  font-family: "Sora-800";
+  src: url(Sora-ExtraBold.ttf);
+}
+.top-menu-inner {
+  display: flex;
+  width: 1216px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 84px;
+}
+.top-menu-inner .top-menu-logo {
+  display: flex;
+}
+.top-menu-inner .top-menu-logo .top-menu-logo-img {
+  width: 23.15px;
+  height: 34.73px;
+  margin-right: 12px;
+}
+.top-menu-inner .top-menu-logo .top-menu-logo-name {
+  padding: 8px 0;
+  font-family: "Sora-700";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.top-menu-inner .top-menu-elements {
+  list-style: none;
+  display: flex;
+}
+.top-menu-inner .top-menu-elements .top-menu-element {
+  margin-right: 32px;
+  font-family: "Sora-600";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.top-menu-inner .top-menu-button {
+  padding: 16px 48px 16px 20px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-family: "Sora-600";
+  font-size: 20px;
+  background-image: url(Icon.svg);
+  background-repeat: no-repeat;
+  background-position: 113px center;
+}
+
+.introduction-menu {
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 140px;
+}
+.introduction-menu img {
+  position: absolute;
+  right: 0;
+}
+.introduction-menu .introduction-menu-text {
+  position: relative;
+  width: 600px;
+  padding: 130px 0;
+  height: 596px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-main {
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin-bottom: 32px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-main span {
+  font-family: "Sora-800";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #71717A;
+}
+.introduction-menu .introduction-menu-text img {
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+}
+
+.skills-menu {
+  width: 1216px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.skills-menu .skills-menu-title {
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+.skills-menu .skills-menu-title span {
+  font-family: "Sora-800";
+}
+.skills-menu .skills-menu-elements {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.skills-menu .skills-menu-elements .skills-menu-element {
+  margin-right: 71.5px;
+  width: 186px;
+  height: 186px;
+  margin-bottom: 40px;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:nth-child(5n) {
+  margin-right: 0;
+}
+
+.experience-menu-wrapper {
+  background-color: black;
+  margin-bottom: 60px;
+}
+.experience-menu-wrapper .experience-menu-inner {
+  width: 1216px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  margin-bottom: 60px;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-title {
+  text-align: center;
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: white;
+  margin-bottom: 80px;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-title span {
+  font-family: "Sora-800";
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element {
+  border: 1px solid #71717A;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  padding: 30px 24px;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time {
+  margin-bottom: 30pxp;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time .experience-menu-element-name {
+  font-family: "Sora-600";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.48px;
+  color: white;
+  padding-left: 64px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time .n1 {
+  background-image: url(google.png);
+  background-repeat: no-repeat;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time .n2 {
+  background-image: url(youtube.png);
+  background-repeat: no-repeat;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time .n3 {
+  background-image: url(apple.png);
+  background-repeat: no-repeat;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-name-time .experience-menu-element-time {
+  font-family: "Sora-600";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: #D4D4D8;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element .experience-menu-element-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: #D4D4D8;
+}
+.experience-menu-wrapper .experience-menu-inner .experience-menu-elements .experience-menu-element:nth-child(2n) {
+  background-color: #27272A;
+}
+
+.about-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 1216px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.about-menu img {
+  margin-right: 80px;
+}
+.about-menu .about-menu-title {
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+.about-menu .about-menu-title span {
+  font-family: "Sora-800";
+}
+.about-menu .about-menu-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #71717A;
+  margin-bottom: 20px;
+}
+.about-menu .about-menu-desc:last-child {
+  margin-bottom: 0;
+}
+
+.projects-menu-wrapper {
+  background-color: black;
+  padding: 60px 80px;
+  margin-bottom: 80px;
+}
+.projects-menu-wrapper .projects-menu-inner {
+  width: 1216px;
+  margin: 0 auto;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-title {
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: white;
+  text-align: center;
+  margin-bottom: 99px;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-title span {
+  font-family: "Sora-800";
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element {
+  display: flex;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .project-image {
+  width: 530px;
+  height: 400px;
+  margin-right: 105px;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .project-image:nth-child(2n) {
+  margin-right: 0;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .projects-menu-element-text {
+  padding: 50px 0;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .projects-menu-element-text .projects-menu-element-number {
+  font-family: "Sora-800";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: white;
+  margin-bottom: 28px;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .projects-menu-element-text .projects-menu-element-title {
+  font-family: "Sora-700";
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+  color: white;
+  margin-bottom: 28px;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element .projects-menu-element-text .projects-menu-element-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #71717A;
+  margin-bottom: 28px;
+}
+.projects-menu-wrapper .projects-menu-inner .projects-menu-elements .projects-menu-element #projects-menu-element-text-2 {
+  margin-right: 105px;
+}
+
+.testimonial-menu-inner {
+  width: 1216px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+.testimonial-menu-inner .testimonial-menu-title {
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.testimonial-menu-inner .testimonial-menu-title span {
+  font-family: "Sora-800";
+}
+.testimonial-menu-inner .testimonial-menu-elements {
+  display: flex;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element {
+  margin-right: 29px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px;
+  width: 370px;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element img {
+  margin-bottom: 24px;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element .testimonial-menu-element-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.32px;
+  margin-bottom: 24px;
+  color: #404040;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element hr {
+  width: 120px;
+  color: #000000;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid black;
+  margin-bottom: 24px;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element .testimonial-menu-element-name {
+  font-family: "Sora-600";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin-bottom: 24px;
+  color: #404040;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element .testimonial-menu-element-prof {
+  font-family: "Sora-600";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: #71717A;
+}
+.testimonial-menu-inner .testimonial-menu-elements #element-2 {
+  background-color: #000000;
+}
+.testimonial-menu-inner .testimonial-menu-elements #element-2 .testimonial-menu-element-desc {
+  color: white;
+}
+.testimonial-menu-inner .testimonial-menu-elements #element-2 hr {
+  color: white;
+}
+.testimonial-menu-inner .testimonial-menu-elements #element-2 .testimonial-menu-element-name {
+  color: white;
+}
+.testimonial-menu-inner .testimonial-menu-elements #element-2 .testimonial-menu-element-prof {
+  color: white;
+}
+.testimonial-menu-inner .testimonial-menu-elements .testimonial-menu-element:last-child {
+  margin-right: 0;
+}
+
+.forms-menu-inner {
+  width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.forms-menu-inner .forms-menu {
+  width: 500px;
+}
+.forms-menu-inner .forms-menu .name {
+  width: 500px;
+  padding: 18px 24px;
+  border: 1.4px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}
+.forms-menu-inner .forms-menu .email {
+  width: 500px;
+  padding: 18px 24px;
+  border: 1.4px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}
+.forms-menu-inner .forms-menu .website {
+  width: 500px;
+  padding: 18px 24px;
+  border: 1.4px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}
+.forms-menu-inner .forms-menu .help {
+  width: 500px;
+  padding: 16px 24px;
+  border: 1.4px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  min-height: 140px;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu {
+  display: flex;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .touch-button {
+  padding: 16px 20px;
+  border-radius: 4px;
+  font-family: "Sora-600";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  background-color: white;
+  margin-right: 20px;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .touch-button:hover {
+  background-color: black;
+  color: white;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .link-element-wrapper {
+  display: flex;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .link-element-wrapper .link-element-inner {
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 18px;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .link-element-wrapper .link-element-inner:last-child {
+  margin-right: 0;
+}
+.forms-menu-inner .forms-menu .form-bottom-menu .link-element-wrapper .link-element-inner:first-child {
+  background-color: black;
+}
+.forms-menu-inner .forms-menu-text {
+  width: 608px;
+  padding: 66px 0;
+}
+.forms-menu-inner .forms-menu-text .forms-menu-text-main {
+  font-family: "Sora-800";
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+.forms-menu-inner .forms-menu-text .forms-menu-text-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 40px;
+  color: #71717A;
+}
+.forms-menu-inner .forms-menu-text .forms-menu-text-mail {
+  font-family: "Sora-600";
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+  margin-bottom: 16px;
+}
+.forms-menu-inner .forms-menu-text .forms-menu-text-number {
+  font-family: "Sora-600";
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+}
+
+.bottom-menu-wrapper {
+  background-color: black;
+}
+.bottom-menu-wrapper .bottom-menu-inner {
+  width: 1216px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-menu-wrapper .bottom-menu-inner .bottom-menu-logo {
+  display: flex;
+  padding: 6px 0;
+}
+.bottom-menu-wrapper .bottom-menu-inner .bottom-menu-logo .bottom-menu-logo-name {
+  font-family: "Sora-700";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: white;
+  padding: 8px 0;
+}
+.bottom-menu-wrapper .bottom-menu-inner .bottom-menu-text-1 {
+  font-family: "Sora-600";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: white;
+  margin-bottom: 12px;
+}
+.bottom-menu-wrapper .bottom-menu-inner .bottom-menu-text-2 {
+  font-family: "Sora-600";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
