@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Sora-400";
+  src: url(Sora-Regular.ttf);
+}
+@font-face {
+  font-family: "Sora-600";
+  src: url(Sora-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Sora-700";
+  src: url(Sora-Bold.ttf);
+}
+@font-face {
+  font-family: "Sora-800";
+  src: url(Sora-ExtraBold.ttf);
+}
+.top-menu-inner {
+  display: flex;
+  width: 1216px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 84px;
+}
+.top-menu-inner .top-menu-logo-wrapper {
+  padding: 8px 0;
+}
+.top-menu-inner .top-menu-logo-wrapper .top-menu-logo-name {
+  padding: 8px 0 8px 52px;
+  font-family: "Sora-700";
+  font-size: 20px;
+  line-height: 24px;
+  background-image: url(Logo.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.top-menu-inner .top-menu-elements {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.top-menu-inner .top-menu-elements .top-menu-element {
+  margin-right: 32px;
+  font-family: "Sora-600";
+  font-size: 20px;
+  line-height: 24px;
+}
+.top-menu-inner .top-menu-button {
+  padding: 13.5px 48px 13.5px 20px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-family: "Sora-600";
+  font-size: 20px;
+  background-image: url(Download\ Icon.svg);
+  background-repeat: no-repeat;
+  background-position: 113px center;
+}
+
+.introduction-menu {
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 116px;
+  background-image: url(Boy.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.introduction-menu .introduction-menu-text {
+  width: 600px;
+  align-items: center;
+  align-content: center;
+  padding-top: 130px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-main {
+  margin-bottom: 32px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-main .introduction-menu-text-element {
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-main .introduction-menu-text-element span {
+  font-family: "Sora-800";
+  font-size: 48px;
+  line-height: 56px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-text-desc {
+  font-family: "Sora-400";
+  font-size: 16px;
+  line-height: 24px;
+  color: #71717A;
+  margin-bottom: 100px;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements {
+  display: flex;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element {
+  margin-right: 32px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 0;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element img + img {
+  display: none;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element a {
+  padding: 16px;
+  display: inline-block;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element:hover {
+  background-color: black;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element:hover img {
+  display: none;
+}
+.introduction-menu .introduction-menu-text .introduction-menu-links-elements .introduction-menu-links-element:hover img + img {
+  display: inline;
+}
+
+.skills-menu {
+  width: 1216px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.skills-menu .skills-menu-title {
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: "Sora-400";
+  font-size: 48px;
+  line-height: 56px;
+}
+.skills-menu .skills-menu-title span {
+  font-family: "Sora-800";
+}
+.skills-menu .skills-menu-elements {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.skills-menu .skills-menu-elements .skills-menu-element {
+  border: 2px solid black;
+  font-size: 0;
+  margin-right: 71.5px;
+  margin-bottom: 40px;
+}
+.skills-menu .skills-menu-elements .skills-menu-element a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 30px 22px;
+}
+.skills-menu .skills-menu-elements .skills-menu-element a img {
+  margin-bottom: 32px;
+  width: 66px;
+  height: 66px;
+}
+.skills-menu .skills-menu-elements .skills-menu-element a .skills-menu-element-name {
+  font-family: "Sora-700";
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  width: 138px;
+}
+.skills-menu .skills-menu-elements .skills-menu-element a img + img {
+  display: none;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:hover {
+  background-color: black;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:hover .skills-menu-element-name {
+  color: white;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:hover img {
+  display: none;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:hover img + img {
+  display: inline;
+}
+.skills-menu .skills-menu-elements .skills-menu-element:nth-child(5n) {
+  margin-right: 0;
+}/*# sourceMappingURL=index.css.map */
